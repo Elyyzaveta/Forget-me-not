@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8"/>
@@ -12,12 +12,18 @@
     <title>Forget-me-not</title>
 </head>
 <body>
-<button id="bt1">Make a </button>
-<button id="bt2">Make a 2 </button>
+<!--<button id="bt1">Make a </button>
+<button id="bt2">Make a 2 </button>-->
 
 <div class="container">
     <div class="container.block">
         <div class="container.task">
+            <form>
+                <textarea  id="myTask" placeholder="Пишите тут"></textarea>
+
+                <input type="submit" id="save.task" value="Сохранить заметку"><br/>
+                <input type="reset" value="Удалить заметку">
+            </form>
 
         </div>
     </div>
