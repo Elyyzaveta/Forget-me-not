@@ -1,22 +1,10 @@
-/*var task =  false;
-$(document).ready(function () {
-    $("#bt2").click(function () {
-        $("<div/>").attr("class", "container").appendTo("body");
-    });
-    $("#bt1").click(function () {
-        if (task === false) {
-            $(".container").show();
-            task = true;
-        }
-    });
 
 
+   function createTask(){
+       var taskName = $("#myTask").val();
+       $(".containerWithTask").append("<div>" + taskName + "</div>");
+   };
 
-});*/
-
-$(document).ready(function () {
-    $("#save.task").click(function () {
-       $("#myTask").val();
-   });
-});
-
+    function Remove() {
+        $(".containerWithTask").remove();
+    };

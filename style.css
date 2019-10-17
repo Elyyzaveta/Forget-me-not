@@ -9,3 +9,9 @@
      background-color: dimgray;
      float: left;
  }
+.containerWithTask{
+    width: 100px;
+    height: 150px;
+    background-color: burlywood;
+    float: right;
+}
