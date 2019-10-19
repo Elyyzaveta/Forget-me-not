@@ -2,7 +2,7 @@
 
    function createTask(){
        var taskName = $("#myTask").val();
-       $(".containerWithTask").append("<div id= revisedRandId()>" + taskName + "</div>");
+       $("body").append("<div>" + taskName + "</div>");
 
    };
 
