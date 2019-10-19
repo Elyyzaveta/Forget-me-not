@@ -2,9 +2,13 @@
 
    function createTask(){
        var taskName = $("#myTask").val();
-       $(".containerWithTask").append("<div>" + taskName + "</div>");
+       $(".containerWithTask").append("<div id= revisedRandId()>" + taskName + "</div>");
+
    };
 
     function Remove() {
         $(".containerWithTask").remove();
     };
+   function revisedRandId() {
+       return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+   }
