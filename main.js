@@ -1,14 +1,16 @@
 
 
-   function createTask(){
+   function createTask() {
        var taskName = $("#myTask").val();
-       $("body").append("<div>" + taskName + "</div>");
-
+       $("body").append("<div id='containerWithTask'>" + taskName + "<button id='btnDel' type='button'/>" +"</div>");
+       var i=0;
+       $('div').each(function(){
+           i++;
+           var newID='#myTask'+i;
+           $(this).attr('id',newID);
+           $(this).val(i);
+       });
    };
-
-    function Remove() {
-        $(".containerWithTask").remove();
-    };
-   function revisedRandId() {
-       return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
-   }
+   $("#btnDel").onclick(function () {
+       $("#myTask").remove();
+   });
