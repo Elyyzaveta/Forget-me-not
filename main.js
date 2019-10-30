@@ -7,6 +7,6 @@ function createTask() {
 };
 
 function remove(id) {
-	console.log(id);	
-}
-
+    $("#" + id).detach();
+    console.log("#" + id);
+};
